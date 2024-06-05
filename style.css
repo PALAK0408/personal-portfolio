@@ -1,0 +1,13 @@
+.hmove { display: flex; }
+.hslide { width: 100%; flex-shrink: 0; }
+.hwrap { overflow: hidden; }
+.hmove { position: relative; top: 0; right: 0; }
+@keyframes slideh {
+  0% { right: 0; } 24% { right: 0; }
+  25% { right: 100%; } 49% { right: 100%; }
+  50% { right: 200%; } 74% { right: 200%; }
+  75% { right: 300%; } 99% { right: 300%; }
+  100% { right: 0; }
+}
+.hmove { animation: slideh 12s infinite; }
+.hmove:hover { animation-play-state: paused; }

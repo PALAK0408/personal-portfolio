@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .neon-button {
+         border: 1px solid #fff;
+         box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgba(204, 0, 255, 0.637), 0 0 50px rgba(217, 0, 255, 0.646), 0 0 60px rgba(247, 0, 255, 0.605), 0 0 70px rgba(191, 0, 255, 0.591);
+         transition: all 0.5s ease-in-out;
+       }
+       body {
+        background-image: url('content/bg-8.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+      
+      }
+      background-image{
+        opacity:0.1;
+      }
+      .card {
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  
+</style>
+    
+</head>
+<body>
+ 
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3  bg-transparent fixed-top navbar-scroll">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Portfolio</a>
+              <div class="float-end ">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                      </li>
+            </div>
+        </nav>
+        <section id="home" class="container-fluid p-3 " style="margin-top:100px;" >
+            <div class=" img-fluid float-end" style="height:100vh; padding-top:50px;">
+                <img src="content/profile.jpg" alt="Profile Picture" class="rounded-pill neon-button" style="width: 300px; height: 400px;">
+            </div>
+            <div class="container text-center" style="padding-top:170px">
+              <h1 class ="display-1 p-2">Hello! I'am Palak</h1>
+              <p class="p-2 ">Creative Web Designer and Developer, skilled in crafting visually 
+                stunning and user-friendly websites. <br>Committed to 
+                delivering exceptional digital experiences through innovative
+               design and cutting-edge technology.
+
+              </p>
+              <a href="#"class="btn btn-info btn-lg" download>Download CV</a>
+            </div>
+            
+        </section>
+        
+          
+           
+          <section  class = "container-fluid" id="about">
+            <div class="container"style="padding-top:400px;">
+            <p class="lead text-center">I am a dedicated Computer Science Engineering diploma student with a strong foundation in front-end web development and design.<br>
+               My skill set includes proficiency in HTML, CSS, JavaScript, and various front-end frameworks.
+                Additionally, I have a growing expertise in artificial intelligence and machine learning, with hands-on experience in implementing and deploying machine learning models.<br>
+               I am passionate about leveraging technology to create innovative solutions 
+               and am eager to apply my knowledge in real-world projects.
+            </p>
+            <div class="img-fluid float-start "  style="height:100vh; padding-right: 50px;">
+              <img src="content/image.png" alt="Profile Picture" class="rounded-pill " style="width: 500px; height: 500px;">
+            </div>
+           
+            
+            <div class="row">
+              <div class="p-4">
+                <button type="button" class="btn btn-outline-info btn-lg  mr-4 active" onclick="showData('experience')">Experience</button>
+                <button type="button" class="btn  btn-outline-info btn-lg  mr-4" onclick="showData('skills')">Skills</button>
+                <button type="button" class="btn  btn-outline-info btn-lg  " onclick="showData('education')">Education</button>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <div id="experience" class="collapse show">
+                  <h2>Experience</h2>
+                  <div>
+                    <dl>
+
+                      <dt>CodeAlpha (Remote, 1 month)</dt>
+                      
+                     <dd>Independently developed responsive web applications using HTML, CSS, and JavaScript.</dd> 
+                      
+                      <dt>Oasis Infobyte (Remote, 1 month)</dt>
+                      
+                     <dd>Designed and developed user-friendly interfaces for web applications.</dd> 
+                      
+                     <dt>Slash Mark (Remote, 2 months)</dt> 
+                      
+                     <dd>Built and maintained websites with a focus on cross-browser compatibility and mobile responsiveness.</dd>
+                      
+                      <dt>Data Science Academia (Remote, 2 months)</dt>
+                      <dd>Collaboratively developed machine learning models using Python and libraries such as Scikit-Learn, TensorFlow, and Keras.</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div id="skills" class="collapse">
+                  <h2>Skills</h2>
+                  <div>
+                    <dl>
+                      <dt>Web Development</dt>
+                      <dd>HTML</dd>
+                      <dd>CSS</dd>
+                      <dd>JavaScript</dd>
+                      <dd>React</dd>
+                      <dd>Bootstrap</dd>
+                      
+                      <dt>Programming Languages</dt>
+                      <dd>Python</dd>
+                      <dd>C/c++</dd>
+                      
+                      <dt>Machine Learning</dt>
+                      
+                      
+                  </dl>
+                  </div>
+
+                </div>
+                <div id="education" class="collapse">
+                  <h2>Education</h2>
+                  <div>
+                    <dl>
+                      <dt>Diploma in Computer Science and Engineering</dt>
+                      <dd>Sarala Birla University, Ranchi</dd>
+                      <dd>4th Semester</dd>
+                      <dd>CGPA: 8.68</dd>
+                      
+                      <dt>High School</dt>
+                      <dd>O.P. Jindal School, Patratu</dd>
+                      <dd>Marks: 72.3%</dd>
+                  </dl>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+          </section>
+          <section class="container-fluid" style ="padding-top:400px" id="projects">
+            <h2 class="text-center display-3">My Work</h2>
+            <p class="text-center lead">Developed responsive web applications and<br> integrated third-party APIs <br>using HTML, CSS, JavaScript, React, and Bootstrap.</p>         
+            <hr class ="my-4 bg-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4">
+                    <img src="content/project1.jpeg" alt="Project 1" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Product Landing Page</h5>
+                      <p class="card-text">made a product landing page using react.</p>
+                      <a href="https://radiant-pika-b0b8de.netlify.app/" class="btn btn-primary">View</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4">
+                    <img src="https://via.placeholder.com/150" alt="Project 2" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Project 2</h5>
+                      <p class="card-text">yet to complete.</p>
+                      <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4">
+                    <img src="https://via.placeholder.com/150" alt="Project 3" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Project 3</h5>
+                      <p class="card-text">yet to complete.</p>
+                      <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </section>
+
+          <section class="container-fluid" style="padding-top:400px;" id="contact">
+            <h1 class="display-3 text-left">Let's Connect</h1>
+            <div class="container float-start">
+              <a href="#" target="_blank" class="text-dark p-2">
+                <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank" class="text-dark p-2">
+              <i class="fab fa-github fa-3x"></i>
+          </a>
+            </div>
+            <div class="container float-end bg-light " style="width:50%;height:500px;">
+              <form class="float-center" data-netlify="true" data-netlify-honeypot="bot-field">
+                <div class="mb-3">
+                  <label for="email1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" style="width:400px">
+                  <div id="emailHelp" class="form-text">Enter your Email</div>
+                </div>
+                <div class="mb-3">
+                  <label for="sub1" class="form-label">Subject</label>
+                  <textarea class="form-control" id="sub1" maxlength ="50"  rows="2" cols="10" style="width:400px;"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="text1" class="form-label">Description</label>
+                  <textarea class="form-control" id="text1" maxlength ="500"  rows="5" cols="50" style="width:400px;"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">agree to terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-outline-info">Submit</button>
+              </form>
+            </div>
+
+
+          </section>
+    </div>
+    <script src = "script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
